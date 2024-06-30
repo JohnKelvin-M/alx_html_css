@@ -1,0 +1,286 @@
+*,
+::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: Source Sans Pro;
+}
+
+#section-hero {
+  /* width: 144rem; */
+  width: 100vw;
+  height: 109.3rem;
+  background-image: url(/css_advanced/images/Object.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+header {
+  position: relative;
+  top: 3.5rem;
+  left: 17.2rem;
+  height: 3rem;
+  width: 110.3rem;
+}
+
+.nav_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav_links {
+  list-style: none;
+  font-family: Source Sans Pro;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  gap: 6rem;
+}
+
+.nav_link:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero_article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero_header {
+  position: relative;
+  top: 22rem;
+  display: flex;
+  flex-direction: column;
+  width: 68.4rem;
+  align-items: center;
+  margin-bottom: 40rem;
+}
+
+.hero_header_heading {
+  font-family: Source Sans Pro;
+  font-size: 12rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 14rem 0;
+  text-align: center;
+}
+
+.hero_header_tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+  font-family: Source Sans Pro;
+  font: 1.6rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 3.5rem;
+}
+
+.hero_header_tag {
+  margin-right: 3rem;
+}
+
+.btn-hero {
+  width: 16.2rem;
+  height: 4.4rem;
+  color: #fff;
+  background-color: #c271ff;
+  border: 0;
+  border-radius: 150px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: Source Sans Pro;
+}
+
+.hero_body {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero_h2 {
+  font-family: Source Sans Pro;
+  font-weight: 300;
+  font-size: 3.2rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.hero_h2 span {
+  font-weight: bold;
+  color: #c271ff;
+}
+
+.hero_profiles {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+.profile_bio {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Source Sans Pro;
+  color: #fff;
+}
+.profile_bio img {
+  border-radius: 100%;
+  margin-bottom: 0.8rem;
+}
+
+.profile_bio h3 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.profile_bio p {
+  font-style: italic;
+}
+
+.profile_bio p:not(:last-of-type) {
+  margin-bottom: 0.2rem;
+}
+
+/* TESTIMONIAL */
+.section-testimonial {
+  background-color: #c271ff;
+  height: 39.2rem;
+  display: flex;
+}
+
+.testimonial {
+  display: flex;
+  margin: auto;
+  gap: 2rem;
+  font-family: Source Sans Pro;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.testimonial_quote blockquote {
+  margin-bottom: 3.2rem;
+}
+
+.testimonial_quote p {
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* TUTORIALS */
+.section-tutorials {
+  padding: 10rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Source Sans Pro;
+}
+
+.tutorial_heading {
+  text-align: center;
+  font-weight: 300;
+  font-size: 3.2rem;
+  color: #000;
+  margin-bottom: 7rem;
+}
+
+.tutorial_heading span {
+  color: #c271ff;
+  font-weight: bold;
+}
+
+.tutorial_videos {
+  display: flex;
+  gap: 2rem;
+}
+
+.tutorial_video {
+  display: flex;
+  flex-direction: column;
+}
+
+.tutorial_video img {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.tutorial_video img::after {
+  content: url(/css_advanced/images/play.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50, -50);
+}
+
+.tutorial_video h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #071629;
+}
+
+.tutorial_video p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: rgba(7, 22, 41, 0.5);
+}
+
+.publisher {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  color: #c271ff;
+}
+
+.publisher img {
+  width: 30px;
+  height: 30px;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating p {
+  color: #c271ff;
+}
+
+/* MEMBERSHIP */
+.section-membership {
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #071629;
+}
+
+.membership_heading {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.membership_heading span {
+  font-weight: bold;
+  color: #c271ff;
+}
+
+.packages {
+  display: flex;
+  justify-content: space-around;
+}
