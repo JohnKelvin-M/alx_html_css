@@ -321,6 +321,35 @@ header {
 }
 
 /* FAQS */
+.section-faq {
+  padding: 5rem 15rem;
+}
+
+.faqs_heading {
+  font-size: 6rem;
+  text-align: center;
+  font-weight: 300;
+  color: #071629;
+  margin-bottom: 5rem;
+}
+
+.faqs {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 8rem 16rem;
+}
+
+.faq h3 {
+  font-size: 1.6rem;
+  color: #071629;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.faq_text {
+  font-size: 1.4rem;
+  color: rgba(7, 22, 41, 0.5);
+}
 
 /* FOOTER */
 footer {
