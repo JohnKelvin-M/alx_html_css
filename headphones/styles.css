@@ -1,0 +1,318 @@
+/* RESET  */
+:root {
+  --color-primary: #fff;
+  --color-secondary: #071629;
+  --color-accent: #ff6565;
+}
+
+*,
+::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 600;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  border-radius: 100px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: #ff6565;
+  padding: 1.3rem 3.1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* HERO */
+.hero {
+  height: 80rem;
+  background-image: url(images/headphones_hero_1.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100rem;
+  position: relative;
+  top: 2.8rem;
+  left: 20rem;
+}
+
+.header__logo {
+  height: 3.2rem;
+}
+
+/* .navigation__nav {
+} */
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  gap: 10rem;
+}
+
+.navigation__link:link {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.hero__textbox {
+  position: absolute;
+  bottom: 11.5rem;
+  left: 38.2rem;
+  width: 63.7rem;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.heading__primary {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.heading__primary--main {
+  display: block;
+  font-size: 3.2rem;
+}
+
+.heading__primary--sub {
+  display: block;
+  font-size: 1.6rem;
+}
+
+.btn--primary {
+  margin-bottom: 6.5rem;
+}
+
+.hero__text {
+  font-size: 1.6rem;
+}
+
+/* ABOUT */
+
+.about {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  color: var(--color-secondary);
+}
+
+.about__textbox {
+  width: 63.7rem;
+  text-align: center;
+  margin: 0 auto 5.6rem;
+}
+
+.about__heading {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.grid-about {
+  gap: 5.8rem;
+}
+
+.about__item {
+  text-align: center;
+  width: 20.7rem;
+  height: 18rem;
+}
+
+.about__text {
+  font-size: 1.6rem;
+}
+
+.about__icon {
+  font-family: "holberton_school-icon";
+  font-size: 10rem;
+  color: var(--color-accent);
+}
+
+.item__text--main {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.item__text--sub {
+  font-size: 1.4rem;
+  display: block;
+}
+
+/* RESULTS */
+.results {
+  height: 65rem;
+  background-image: url(images/headphones_hero_2.jpg);
+  background-size: cover;
+  padding-top: 14rem;
+  color: var(--color-primary);
+}
+
+.results__textbox {
+  text-align: center;
+  width: 63.7rem;
+  margin: 0 auto 5.6rem;
+}
+
+.results__heading {
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+}
+
+.grid-results {
+  gap: 8rem;
+}
+.results__text {
+  font-size: 1.6rem;
+}
+
+.grid__result {
+  position: relative;
+  width: 19rem;
+  height: 19rem;
+}
+
+.grid__result img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.result__textbox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.result__text--main {
+  font-size: 4.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.result__text--sub {
+  font-size: 1.4rem;
+  display: block;
+}
+
+/* CONTACT */
+.contact__heading {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 6rem;
+  color: var(--color-secondary);
+}
+
+.contact-form {
+  background: #fff;
+  padding: 2rem;
+  width: 33.5rem;
+  text-align: center;
+  margin: 10rem auto 8rem;
+}
+
+.form-group {
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid var(--color-secondary);
+  padding-left: 0;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--color-secondary);
+}
+
+/* FOOTER */
+.footer {
+  height: 25rem;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  padding-top: 9.2rem;
+}
+
+.footer__logo {
+  height: 3.2rem;
+}
+
+.footer__nav {
+  max-width: 100rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7rem;
+  margin-left: 20rem;
+}
+
+.footer__nav__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer__icon {
+  font-family: "holberton_school-icon";
+  font-size: 3.2rem;
+  color: var(--color-primary);
+}
+
+.footer__text {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  text-align: center;
+}
